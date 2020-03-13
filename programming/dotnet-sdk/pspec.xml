@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dotnet-sdk</Name>
+        <Homepage>https://github.com/dotnet</Homepage>
+        <Packager>
+            <Name>Alex S.</Name>
+            <Email>welemoc@outlook.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <PartOf>programming</PartOf>
+        <Summary xml:lang="en">.NET Core SDK.</Summary>
+        <Description xml:lang="en">.NET Core is an open-source, general-purpose development platform maintained by Microsoft and the .NET community on GitHub.</Description>
+        <Archive sha1sum="03ee2f5ddb918bd2119d753ccbab81a28d8dc579" type="targz">https://download.visualstudio.microsoft.com/download/pr/57e63f03-ebdf-4c22-96ff-2b85dc70cf7f/988576869e82a80f4a97ca5a733a5295/dotnet-sdk-3.1.102-linux-x64.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>dotnet-sdk</Name>
+        <Summary xml:lang="en">.NET Core SDK.</Summary>
+        <Description xml:lang="en">.NET Core is an open-source, general-purpose development platform maintained by Microsoft and the .NET community on GitHub.</Description>
+        <PartOf>programming</PartOf>
+        <Files>
+            <Path fileType="data">/opt/dotnet</Path>
+            <Path fileType="data">/usr/bin/dotnet</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>kerberos</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>libicu</Dependency>
+            <Dependency>libgdiplus</Dependency>
+        </RuntimeDependencies>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>13-03-2020</Date>
+            <Version>3.1.102</Version>
+            <Comment>Update to 3.1.102</Comment>
+            <Name>Alex S.</Name>
+            <Email>welemoc@outlook.com</Email>
+        </Update>
+    </History>
+</PISI>
